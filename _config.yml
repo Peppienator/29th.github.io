@@ -1,0 +1,13 @@
+# Site settings
+title: 29th Infantry Division
+baseurl: "" # the subpath of your site, e.g. /blog/
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# URLs
+forum_url: "http://forums.29th.org"
+personnel_url: "http://personnel.29th.org"
+default_herourl: "arma.jpg"
+
+# Build settings
+markdown: kramdown

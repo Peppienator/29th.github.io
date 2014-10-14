@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    
+    {% include hero.html %}
+
+    <div class="container">
+    
+      <div class="row">
+        {% if page.panel == true %}
+        <div class="col-md-4 appeal-search">
+          {% include panel.html %}
+        </div>
+        <div class="results col-md-8">
+          {{ content }}
+        </div>
+        {% else %}
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          {{ content }}
+        </div>
+        {% endif %}
+      </div>
+      
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
